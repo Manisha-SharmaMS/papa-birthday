@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fffafc;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  margin-top: 80px;
+  padding: 20px;
+  position: relative;
+  z-index: 1000;
+}
+
+h1 {
+  font-size: 2.4em;
+  color: #ff6f91;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  color: #444;
+}
+
+.cake {
+  width: 240px;
+  margin: 25px 0;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+button {
+  padding: 12px 26px;
+  font-size: 1em;
+  border: none;
+  border-radius: 30px;
+  background-color: #ffb6c1;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(255, 182, 193, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff80a6;
+}
+
+.wish-text {
+  font-size: 1.3em;
+  margin-top: 18px;
+  color: #d6336c;
+  display: none;
+  position: relative;     
+  z-index: 1001;        
+}
+
+
+/* Glitter Canvas */
+#glitterCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
